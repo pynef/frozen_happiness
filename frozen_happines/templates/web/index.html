@@ -1,0 +1,287 @@
+{% load staticfiles %}
+<!DOCTYPE HTML>
+<html>
+	<head>
+	 	
+		<title>Heladeria Frozen Happines | Queso Helado</title>
+		<link rel="fluid-icon" href="{% static 'dist/images/icono.png' %}" title="FrozenHappiness">
+		<link href="{% static 'dist/css/bootstrap.css' %}" rel="stylesheet" type="text/css" media="all">
+		<link href="{% static 'dist/css/style.css' %}" rel="stylesheet" type="text/css" media="all" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="Frozen Happines" />
+		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+		<script src="{% static 'dist/js/jquery-1.11.1.min.js' %}"></script>
+		<script src="{% static 'dist/js/bootstrap.js' %}"></script>
+		<link href='//fonts.googleapis.com/css?family=Damion' rel='stylesheet' type='text/css'>
+		<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+		<link href='//fonts.googleapis.com/css?family=Ubuntu+Condensed' rel='stylesheet' type='text/css'>
+		<script src="{% static 'dist/js/responsiveslides.min.js' %}"></script>
+		 <script>
+		    $(function () {
+		      $("#slider").responsiveSlides({
+		      	auto: true,
+		      	nav: true,
+		      	speed: 500,
+		        namespace: "callbacks",
+		        pager: true,
+		      });
+		    });
+		  </script>
+		  <!--startsmothscrolling-->
+		<script type="text/javascript" src="{% static 'dist/js/move-top.js' %}"></script>
+		<script type="text/javascript" src="{% static 'dist/js/easing.js' %}"></script>
+		 <script type="text/javascript">
+				jQuery(document).ready(function($) {
+					$(".scroll").click(function(event){		
+						event.preventDefault();
+						$('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
+					});
+				});
+			</script>
+		<!--endsmothscrolling-->
+
+	</head>
+<body>
+<!--header-->
+	<div class="header ">
+		<div class="container">
+			<nav class="navbar navbar-default">
+				<div class="container-fluid">
+		<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>				  
+						<div class="navbar-brand">
+							<h1><a href="/">Frozen Happines</a></h1>
+						</div>
+					</div>
+
+		<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						<ul class="nav navbar-nav">
+							<li class="active"><a href="index.html">Inicio <span class="sr-only">(current)</span></a></li>
+							<li><a href="#">Nosotro</a></li>
+							<li><a href="# class="scroll">Postres</a></li>
+								<li class="dropdown">
+								<a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Galeria <span class="caret"></span></a>
+									<ul class="dropdown-menu">
+										<li><a href="#">Queso Helado</a></li>
+										<li><a href="#">Helados Artesanales</a></li>
+										<li><a href="#">Confiteria</a></li>
+									</ul>
+								</li>
+							<li><a href="#">Contactanos</a></li>
+						</ul>
+								  
+					</div><!-- /.navbar-collapse -->
+				</div><!-- /.container-fluid -->
+			</nav>
+			<div class="slider">
+				<div class="callbacks_container">
+					<ul class="rslides" id="slider">
+						 <li>	 
+							<div class="caption">
+							<div class="col-md-6 cap-img">
+							<img src="{% static 'dist/images/p.png' %}"  class="img-responsive" alt="/">
+							</div>
+							<div class="col-md-6 cap">
+								<h3>Helados Artesanales </h3>  
+								<p>Son los productos alimenticios llevados al estado sólido o pastoso por medio de la congelación, elaborados con dos o más de los ingredientes siguientes: Leche o productos lácteos en sus diferentes formas, grasa de leche, grasas vegetales desodorizadas; edulcorantes permitidos, huevos, agua, jugos y pulpa de frutas, frutas, chocolate, nueces y/o productos similares, aditivos permitidos y otros.</p>
+								<a class="button" data-toggle="modal" data-target="#myModal1" href="#">Pedido Online</a>
+							</div>
+							</div>
+							<div class="clearfix"></div>
+						 </li>
+						 <li>
+							<div class="caption">
+							<div class="col-md-6 cap-img">
+								<img src="{% static 'dist/images/p1.png' %}"  class="img-responsive" alt="/">
+							</div>
+							<div class="col-md-6 cap">
+								<h3>Queso Helado</h3> 
+								<p>El origen de los helados no se puede establecer a ciencia cierta, puesto que algunos sostienen que proviene de China, otros ubican su nacimiento en Grecia y otros tantos en Egipto. Sin embargo, muchos coinciden en que aparecen hace aproximadamente tres mil años.</p>
+								<a class="button" data-toggle="modal" data-target="#myModal1" href="#">Pedido Online</a>
+							</div>
+							</div>
+							<div class="clearfix"></div>
+						</li>
+						 <li>	          
+							<div class="caption">
+							<div class="col-md-6 cap-img">
+							<img src="{% static 'dist/images/p2.png' %}"  class="img-responsive" alt="/">
+							</div>
+							<div class="col-md-6 cap">
+								<h3>Frozen Happines </h3>
+								<p>Somos una empresa dedicada a la producción y comercialización de queso helado artesanal que brinda un servicio de calidad..</p>
+								<a class="button" data-toggle="modal" data-target="#myModal1" href="#">Pedido Online</a>
+							</div>
+							</div>
+							<div class="clearfix"></div>
+						 </li>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+<!--header-->
+			<!--content-->
+				<div class="content">
+				<!--high-->
+					<div class="high-quality">
+						<div class="container">
+							<h3>El queso que sabe a beso </h3>
+							<h2>GENERAR <span>ALEGRIA</span> DIVERSION</h2>
+							<p>es innovador ya que en la ciudad de Huancayo no se comercializa a si mismo su nombre genera una gran expectativa que atraerá al público asiéndolo novedoso para competir en el mercado local llegando a satisfacer las necesidades de los clientes.</p>
+						</div>
+					</div>
+					<!--high-->
+					<!--menu-->
+						<div class="feature-menu" id="menu">
+							<div class="container">
+								<h3><span>Nuestro</span> Productos</h3>
+								<div class="feature-grids">
+									<div class="col-md-4 feature-grid">
+										<img src="{% static 'dist/images/m1.png' %}" class="img-responsive" alt="/">
+										<div class="rate rate1">
+											<h5>1.00</h5>
+										</div>
+									</div>
+									<div class="col-md-4 feature-grid">
+									<img src="{% static 'dist/images/m2.png' %}" class="img-responsive" alt="/">
+									<div class="rate">
+											<h5>2.00</h5>
+										</div>
+									</div>
+									<div class="col-md-4 feature-grid">
+									<img src="{% static 'dist/images/m3.png' %}" class="img-responsive" alt="/">
+									<div class="rate">
+											<h5>3.00</h5>
+										</div>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+							</div>
+						</div>
+					<!--menu-->
+					<!--footer-->
+					<div class="footer-section">
+						<div class="container">
+							<div class="footer-grids">
+								<div class="col-md-3 footer-grid">
+									<h4>productos</h4>
+									<ul>
+										<li>Queso Helado </li>
+										<li>Helados Artesanales</li>
+										<li>Sorpresas</li>
+									</ul>
+								</div>
+								<div class="col-md-3 footer-grid">
+									<h4>Horario</h4>
+									<ul>
+										<li>Lun-Vie : 10am - 8pm</li>
+										<li>Sab-Dom : 9am - 11pm</li>
+										<li>Feriados : 10am - 8pm</li>
+									</ul>
+								</div>
+								<div class="col-md-3 footer-grid">
+									<h4>Social</h4>
+									<ul>
+										<li><a href="#">facebook</a></li>
+										<li><a href="#">twitter</a></li>
+										<li><a href="#">google +</a></li>
+										<li><a href="#">Pinterest</a></li>
+										<li><a href="#">vimeo</a></li>
+									</ul>
+								</div>
+								<div class="col-md-3 footer-grid">
+									<h4>Contactenos</h4>
+									<p>Calle Real 1234</p>
+									<p>Telephone : +051 931133706</p>
+									<p>FAX : + 064 225036</p>
+									<p>E-mail : <a href="mailto:frozenhappines@mail.com"> frozenhappines@mail.com</a></p>
+
+								</div>
+								<div class="clearfix"></div>
+							</div>
+						</div>
+					</div>
+			<!--footer-->	
+
+				</div>
+				<!--copy-->
+					<div class="copy-section">
+						<div class="container">
+							<p>&copy; 2016. All rights reserved | Diseñado por <a href="http://w3layouts.com">Nefi Arroyo</a></p>
+						</div>
+					</div>
+				<!--copy-->
+		<div class="modal fade" id="myModal1" tabindex="-1" role="dialog">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content modal-info">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>						
+					</div>
+						<div class="modal-body">
+							<div class="compose-grids">
+									<div class="payment-online-form-left">
+											<form>
+												<h4><span class="shipping"> </span>Detalles de Envio</h4>
+												<ul>
+													<li><input class="text-box-dark" type="text" value="Nombres" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'First Name';}"></li>
+													<li><input class="text-box-dark" type="text" value="Apellidos" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Last Name';}"></li>
+												</ul>
+												<ul>
+													<li><input class="text-box-dark" type="text" value="Correo" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}"></li>
+													<li><input class="text-box-dark" type="text" value="Celular" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Phone';}"></li>
+												</ul>
+												<ul>
+													<li><input class="text-box-dark" type="text" value="Direccion" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Address';}"></li>
+													<li><input class="text-box-dark" type="text" value="codigo PIN" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Pin Code';}"></li>
+													
+												</ul>
+												<div class="clearfix"></div>
+												<h4 class="paymenthead"><span class="payment"></span>Detalles de Pago</h4>
+												<div class="clearfix"></div>
+											<ul class="payment-type">
+												<li><span class="col_checkbox">
+													<input id="3" class="css-checkbox1" type="checkbox">
+													<label for="3" class="css-label1"></label>
+													<a class="visa" href="#"></a>
+													</span>												
+												</li>
+												<li>
+													<span class="col_checkbox">
+														<input id="4" class="css-checkbox2" type="checkbox">
+														<label for="4" class="css-label2"></label>
+														<a class="paypal" href="#"></a>
+													</span>
+												</li>
+											</ul>
+												<ul>
+													<li><input class="text-box-dark" type="text" value="Numero de Tarjeta" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Card Number';}"></li>
+													<li><input class="text-box-dark" type="text" value="Nombre de la Tarjeta" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name on card';}"></li>
+												
+												</ul>
+												<ul>
+													<li><input class="text-box-light hasDatepicker" type="text" id="datepicker" value="Expiracion de Fecha" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Expiration Date';}"><em class="pay-date"> </em></li>
+													<li><input class="text-box-dark" type="text" value="Codigo de Seguridad" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Security Code';}"></li>
+												
+												</ul>
+
+									  <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+									<button type="submit" class="btn btn-success">Procesar</button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+</body>
+</html>
